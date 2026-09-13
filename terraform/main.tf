@@ -28,6 +28,8 @@ resource "aws_subnet" "my_tf_public_subnet" {
   }
 }
 
+
+
 resource "aws_s3_bucket" "my_tf_bucket" {
   bucket = "anuj-terraform-practice-2026"
 
