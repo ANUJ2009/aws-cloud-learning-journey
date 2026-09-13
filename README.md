@@ -47,10 +47,14 @@ Documenting my hands-on path into cloud engineering, starting from Linux basics.
 - Ran the full IaC lifecycle: `terraform init` → `plan` → `apply` → `destroy`
 - Verified resources were created and cleanly destroyed via the AWS Console
 
+### CI/CD (GitHub Actions)
+- Built a GitHub Actions workflow (`.github/workflows/terraform-check.yml`) to validate Terraform code automatically
+- Pipeline runs on every push to the `terraform/` folder: checkout → setup Terraform → init → format check → validate
+- Verified the pipeline triggers correctly and completes successfully (green checkmark) on real commits
+
 ## Next Up
-- CI/CD pipelines (GitHub Actions)
 - Docker and containers
 - AWS Solutions Architect Associate certification prep
 
 ## Tools Used
-AWS Free Tier, WSL (Ubuntu), Git/GitHub, Terraform
+AWS Free Tier, WSL (Ubuntu), Git/GitHub, Terraform, GitHub Actions
