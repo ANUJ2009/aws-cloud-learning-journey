@@ -40,9 +40,17 @@ Documenting my hands-on path into cloud engineering, starting from Linux basics.
 - Configured the database with public access disabled, reachable only from within the VPC
 - Practiced secure architecture: private database, dedicated security group, no direct internet exposure
 
+### Terraform (Infrastructure as Code)
+- Installed and configured Terraform and AWS CLI in WSL
+- Wrote a Terraform configuration (main.tf) provisioning a VPC, subnet, and S3 bucket
+- Debugged a real-world IAM permissions error (missing AdministratorAccess) surfaced by Terraform
+- Ran the full IaC lifecycle: `terraform init` → `plan` → `apply` → `destroy`
+- Verified resources were created and cleanly destroyed via the AWS Console
+
 ## Next Up
-- Terraform (Infrastructure as Code)
-- CI/CD pipelines
+- CI/CD pipelines (GitHub Actions)
+- Docker and containers
+- AWS Solutions Architect Associate certification prep
 
 ## Tools Used
-AWS Free Tier, WSL (Ubuntu), Git/GitHub
+AWS Free Tier, WSL (Ubuntu), Git/GitHub, Terraform
