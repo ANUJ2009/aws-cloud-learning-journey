@@ -52,9 +52,16 @@ Documenting my hands-on path into cloud engineering, starting from Linux basics.
 - Pipeline runs on every push to the `terraform/` folder: checkout → setup Terraform → init → format check → validate
 - Verified the pipeline triggers correctly and completes successfully (green checkmark) on real commits
 
+### Docker & Amazon ECR
+- Installed Docker and ran pre-built containers (hello-world, nginx)
+- Wrote a custom Dockerfile and built a personal image from scratch
+- Created a private Amazon ECR repository and pushed the custom image to it
+- Launched a fresh EC2 instance, attached an IAM role (AmazonEC2ContainerRegistryReadOnly) instead of using hardcoded credentials
+- Pulled the image from ECR onto EC2 and ran it, deploying a fully containerized app live on AWS
+- Debugged real issues along the way: shell syntax errors, SSH key paths, and security group rules for port 80
+
 ## Next Up
-- Docker and containers
 - AWS Solutions Architect Associate certification prep
 
 ## Tools Used
-AWS Free Tier, WSL (Ubuntu), Git/GitHub, Terraform, GitHub Actions
+AWS Free Tier, WSL (Ubuntu), Git/GitHub, Terraform, GitHub Actions, Docker, Amazon ECR
